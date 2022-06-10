@@ -21,8 +21,11 @@ unzip set-misc-nginx-module.zip
 unzip headers-more-nginx-module.zip
 unzip ngx_devel_kit.zip
 unzip nginx-module-vts.zip
+unzip nginx-module-stream-sts.zip
+unzip nginx-module-sts.zip
 unzip ngx_log_if.zip
 unzip njs-0b75123c6ea4.zip
+
 cd nginx-1.22.0
 #start install
 ./configure \
@@ -76,6 +79,8 @@ cd nginx-1.22.0
 --add-dynamic-module=../headers-more-nginx-module \
 --add-dynamic-module=../echo-nginx-module \
 --add-dynamic-module=../nginx-module-vts \
+--add-dynamic-module=../nginx-module-stream-sts \
+--add-dynamic-module=../nginx-module-sts \
 --add-dynamic-module=../ngx_log_if \
 --add-dynamic-module=../njs-0b75123c6ea4/nginx
 
